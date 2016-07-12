@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Blog</title>
+</head>
+<body>
+    <h3>Latest posts:</h3>
+    {% for post in posts %}
+		<div class="post">
+			<form action = "/edit" method="post">
+                <input name="title" value= "{{ post['title'] }}">
+                <br/>
+                <textarea name="description">{{ post['description'] }}</textarea>
+                <br/>
+                <input type="submit" value="edit">
+                <input type="hidden" name="id" value="{{ post['id'] }}">
+            </form>
+			<form action="/delete" method="post">
+                <input type="hidden" name="id" value="{{ post['id'] }}">
+                <input type="submit" value="delete">
+            </form><br/><br/>
+		</div>
+	{% endfor %}
+    <form action="/new" method="post">
+        <span>Title: </span><br/>
+        <input name="title"><br/><br/>
+        <span>Post: </span><br/>
+        <textarea  name="description"></textarea><br/>
+        <input type="submit" value="Send post">
+        <input type="reset" value="Reset">
+   </form>
+</body>
+</html>

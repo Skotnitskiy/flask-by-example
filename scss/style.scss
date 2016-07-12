@@ -1,0 +1,88 @@
+@import "main";
+@import "new-post";
+@import "post";
+
+* {
+  box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+html {
+  font-family: 'Droid Sans', serif;
+
+}
+
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+.title{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.wrapper{
+  width: 5em;
+}
+
+.wrapper-left{
+  svg{
+    transform: translate(0px, 0px) ;
+  }
+  align-self: flex-start;
+}
+
+.wrapper-right{
+  align-self: flex-end;
+  svg{
+    transform: translate(0px, 48px) ;
+  }
+}
+
+svg{
+  width:80%;
+  height:80%;
+}
+
+
+.header{
+  display: flex;
+  padding: 15px;
+  align-content: flex-end;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 48px;
+}
+
+.header-middle{
+  flex-direction: column;
+  display:flex;
+}
+
+.title-main{
+  font-size: xx-large;
+  text-align: center;
+}

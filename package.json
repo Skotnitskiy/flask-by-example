@@ -1,0 +1,26 @@
+{
+  "name": "gulp-sass-jquery-trainy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-useref": "^3.1.0",
+    "run-sequence": "^1.2.2"
+  }
+}
